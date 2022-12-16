@@ -6,6 +6,7 @@ body {
 :root {
     --primary-green: #5ea781;
     --text-primary: #253237;
+    --text-bs: black;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -500,7 +501,10 @@ template {
 }
 
 .overlay .overlay_ho svg {
-    width: 3rem;
+    width: 2rem;
+    font-size: 25px;
+
+    color: black;
 }
 
 .overlay .overlay_ho svg:hover {
@@ -509,11 +513,19 @@ template {
 
 .overlay .overlay_ho1 {
     border-bottom: 3px solid black;
+    font-size: 14px;
+    color: black;
+}
+
+.overlay .overlay_ho1:hover {
+    color: var(--primary-green);
+    border-bottom: 3px solid var(--primary-green);
 }
 
 .overlay .overlay_ho {
     font-size: 14px;
     font-weight: 700;
+    color: black;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -521,7 +533,7 @@ template {
 }
 
 .overlay {
-    background-color: aqua;
+    /* background-color: aqua; */
     /* min-width: 303px; */
     /* height: 100px; */
     width: 100%;
@@ -529,7 +541,6 @@ template {
     bottom: 0;
     display: none;
     padding: 10px 0px;
-
 }
 
 .product_bg:hover .price {
@@ -543,13 +554,51 @@ template {
 .product_bg:hover .overlay {
     display: block;
     cursor: pointer;
-    /* transition: 1s; */
+    transition: .5s ease;
+
 }
 
+/* item image hover,content start */
 .product_bg .item_image {
+    position: relative;
+    display: block;
+}
+
+.product_bg .item_image1 {
+    display: none;
     position: relative;
 }
 
+.product_bg:hover .item_image {
+    display: none;
+}
+
+.product_bg:hover .item_image1 {
+    display: block;
+}
+
+.circle {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+    left: 128px;
+    color: black;
+}
+
+.circle:hover {
+    background-color: var(--primary-green);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* item image hover,content  end*/
 .contact_text1 svg {
     font-size: 30px;
 }
@@ -595,6 +644,7 @@ template {
     transform: translateX(10px);
     transition: 1s;
     cursor: pointer;
+
 }
 
 .header_contact_info .nav-link {
@@ -637,13 +687,14 @@ template {
 }
 
 .product_bg:hover {
-    border: 1px solid var(--primary-green)
+    border: 1px solid var(--primary-green);
+    transition: 0s;
 }
 
 .product_bg .item_badge {
     position: absolute;
-    top: 25px;
-    left: 58px
+    top: 12px;
+    left: 30px
 }
 
 .product_bg .item_text {
