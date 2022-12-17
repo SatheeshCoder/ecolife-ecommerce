@@ -560,13 +560,13 @@ template {
 
 /* item image hover,content start */
 .product_bg .item_image {
-    position: relative;
+
+
     display: block;
 }
 
 .product_bg .item_image1 {
     display: none;
-    position: relative;
 }
 
 .product_bg:hover .item_image {
@@ -578,14 +578,11 @@ template {
 }
 
 .circle {
-    display: block;
+    display: none;
     width: 50px;
     height: 50px;
     border-radius: 30px;
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     top: 80px;
     left: 128px;
@@ -596,6 +593,48 @@ template {
     background-color: var(--primary-green);
     color: #fff;
     cursor: pointer;
+}
+
+.list_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid gray; */
+    padding: 2px;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+}
+
+.list_icon button {
+    margin: 4px;
+    background: rgb(121, 12, 9);
+    background: linear-gradient(90deg, rgba(121, 12, 9, 0.9951330874146533) 12%, rgba(50, 60, 62, 1) 100%);
+    ;
+}
+
+.list_icon button:hover {
+    color: #673ab7;
+}
+
+.list_icon svg {
+    font-size: 40px;
+    -webkit-transform: rotate(90deg);
+}
+
+.ot_Stock {
+    position: absolute;
+    top: 85px;
+    left: 83px;
+}
+
+.product_bg:hover .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* item image hover,content  end*/
@@ -674,7 +713,7 @@ template {
     max-height: 212px;
     margin: auto;
     display: block;
-    position: relative;
+
 }
 
 .product_bg {
@@ -684,6 +723,7 @@ template {
     margin-bottom: 30px;
     border-radius: 5px;
     position: relative;
+    width: 100%;
 }
 
 .product_bg:hover {
@@ -694,7 +734,15 @@ template {
 .product_bg .item_badge {
     position: absolute;
     top: 12px;
-    left: 30px
+    left: 30px;
+    display: block;
+}
+
+.item_image1:hover .item_badge {
+    position: absolute;
+    top: 12px;
+    left: 30px;
+    display: block;
 }
 
 .product_bg .item_text {
