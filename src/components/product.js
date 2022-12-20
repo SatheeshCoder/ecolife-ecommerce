@@ -156,9 +156,9 @@ function Product() {
     ]);
   }, []);
 
-  const captitalName = (satheesh) => {
+  const captitalName = (e) => {
     // alert(e);
-    const str = satheesh;
+    const str = e;
     const str2 = str.charAt(0).toUpperCase() + str.slice(1);
     console.log(str2);
     return str2;
