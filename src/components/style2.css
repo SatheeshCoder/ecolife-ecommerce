@@ -125,6 +125,78 @@ body {
     vertical-align: top;
 }
 
+.product_txp {
+    position: relative;
+    margin: 10px;
+
+}
+
+.product_txh:hover {
+    overflow: hidden;
+}
+
+.product_txh img {
+    width: 100%;
+}
+
+.product_txh img:hover {
+    transition: ease;
+    transform: scale(1.1);
+    transition-delay: -6s;
+
+}
+
+.product_txp .text_card {
+    position: absolute;
+    top: 59px;
+    left: 44px;
+    width: 165px;
+}
+
+.product_txp .circle_tx {
+    float: left;
+    margin-right: 6px;
+}
+
+.product_txp .circle_icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #5ea781;
+    float: left;
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_card h3 {
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    line-height: 1;
+    color: var(--text-bs);
+}
+
+
+
+.text_card {
+    color: #888;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    line-height: 1;
+    margin-top: 0
+}
+
+.text_card a {
+    color: black;
+    font-size: 13px;
+    text-transform: capitalize;
+    line-height: 1;
+}
+
 .slide-in-right {
     -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

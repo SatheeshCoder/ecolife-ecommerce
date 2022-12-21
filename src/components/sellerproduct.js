@@ -1,6 +1,8 @@
 import { Details } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import Image1 from "../img/thumb-1.jpg";
 import "../components/style2.css";
 function Sellerproduct() {
   const [item, setItem] = useState([]);
@@ -8,7 +10,7 @@ function Sellerproduct() {
     setItem([
       {
         img:
-          "ttps://blueskytechmage.com/ecolife/media/catalog/category/thumb-1.jpg",
+          "https://blueskytechmage.com/ecolife/media/catalog/category/thumb-1.jpg",
         items: "(20 items)",
         shoppindtime: "shop now",
       },
@@ -46,22 +48,34 @@ function Sellerproduct() {
   }, []);
   return (
     <>
-      {item.length > 0 &&
-        item.map((e, i) => {
-          return (
-            <div className="product_bg">
-              <Container>
-                <Row>
-                  <Col sm="12 " md="4">
-                    <img src={e.img} />
-                    <span>{e.items}</span>
-                    <span>{e.shoppindtime}</span>
-                  </Col>
-                </Row>
-              </Container>
-            </div>
-          );
-        })}
+      {item.length > 0 && (
+        <Container>
+          <Row>
+            {item.map((e, i) => {
+              return (
+                <Col sm={12} md={4}>
+                  <span className="product_txp">
+                    <div className="product_txh">
+                      <img src={e.img} alt="productdetails" />
+                    </div>
+                    <div className="text_card">
+                      <h3>fresh vegetables</h3>
+                      <p>(20 items)</p>
+
+                      <a>
+                        <p className="circle_tx"> shop now</p>
+                        <div className="circle_icon">
+                          <ArrowRightIcon />
+                        </div>
+                      </a>
+                    </div>
+                  </span>
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
+      )}
     </>
   );
 }
