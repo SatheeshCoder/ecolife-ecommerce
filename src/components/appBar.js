@@ -65,7 +65,7 @@ function AppBar() {
                   className="ddowm_item fullwidth_dropdown"
                 >
                   <Row>
-                    <Col sm={3}>
+                    <Col sm={6} md={6} lg={3}>
                       {" "}
                       <ListGroup>
                         <ListGroup.Item className="fw-bold">
@@ -77,7 +77,7 @@ function AppBar() {
                         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                       </ListGroup>
                     </Col>
-                    <Col sm={3}>
+                    <Col sm={6} md={6} lg={3}>
                       {" "}
                       <ListGroup>
                         <ListGroup.Item className="fw-bold">
@@ -89,7 +89,7 @@ function AppBar() {
                         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                       </ListGroup>
                     </Col>
-                    <Col sm={3}>
+                    <Col sm={6} md={6} lg={3}>
                       {" "}
                       <ListGroup>
                         <ListGroup.Item className="fw-bold">
@@ -101,7 +101,7 @@ function AppBar() {
                         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
                       </ListGroup>
                     </Col>
-                    <Col sm={3}>
+                    <Col sm={6} md={6} lg={3}>
                       {" "}
                       <ListGroup>
                         <ListGroup.Item className="fw-bold">

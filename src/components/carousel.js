@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Carousel, Button } from "react-bootstrap";
+import { Button, Carousel } from "react-bootstrap";
+import "../css/style2.css";
 import SlideItem from "../img/carousel.jpg";
 import SlideItem2 from "../img/carousel1.jpg";
-import SlideItem3 from "../img/carousel1.jpg";
 
 import "../components/style2.css";
 
@@ -16,12 +16,6 @@ function carousel() {
         fruitsname: "summerdrinks",
         shippingdetail: "free shipping on qualified orders over",
       },
-      //   {
-      //     category: "100% natural",
-      //     fruits: "organic fruits",
-      //     fruitsname: "summerdrinks",
-      //     shippingdetail: "free shipping on qualified orders over",
-      //   },
     ]);
   }, []);
   useEffect(() => {
