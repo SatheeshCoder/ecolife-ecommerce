@@ -8,6 +8,7 @@ body {
     --text-primary: #253237;
     --text-bs: black;
     --text-bs1: gray;
+    --primary-grey: #888;
     --bsbthover: #253237;
 }
 
@@ -253,7 +254,7 @@ body {
     margin-top: 0;
 }
 
-.text_phone .phone {
+.page_footer .text_phone .phone {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -261,14 +262,14 @@ body {
     margin-top: 0;
 }
 
-.txt_phone .phone {
+.page_footer .txt_phone .phone {
     font-size: 22px;
     font-weight: 600;
     color: #253237;
     margin: 0;
 }
 
-.social_follow ul {
+.page_footer .social_follow ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -276,7 +277,7 @@ body {
     padding-left: 0px;
 }
 
-.social_follow li {
+.page_footer .social_follow li {
     width: 50px;
     color: #666;
 }
@@ -285,27 +286,27 @@ body {
     background-color: #efefef;
 }
 
-.appstore_logo {
+.page_footer .appstore_logo {
     width: 50%;
     display: inline;
 }
 
-.googleplay_logo {
+.page_footer .googleplay_logo {
     width: 50%;
     display: inline;
 }
 
-.appstore_logo img {
+.page_footer .appstore_logo img {
     width: 25%;
     margin-right: 10px;
 
 }
 
-.googleplay_logo img {
+.page_footer .googleplay_logo img {
     width: 25%;
 }
 
-.page_footer .col_content h3 {
+.page_footer .col_content .footer_tx {
 
     font-size: 16px;
     text-transform: capitalize;
@@ -319,7 +320,7 @@ body {
     pointer-events: none;
 }
 
-.col_content h3::after {
+.page_footer .col_content .footer_tx::after {
     content: "";
     position: absolute;
     left: 0;
@@ -333,20 +334,27 @@ body {
     box-shadow: none;
 }
 
-.col_content ul {
+.page_footer .col_content ul {
     list-style: none;
     padding: unset;
 
 }
 
-.col_content li, p {
+.page_footer .col_content li {
     margin-bottom: 10px;
     font-size: 14px;
     text-transform: capitalize;
     color: #666;
 }
 
-.col_content .form_box {
+.page_footer .col_content p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #666;
+}
+
+.page_footer .col_content .form_box {
     margin-bottom: 30px;
 }
 
@@ -354,7 +362,7 @@ body {
     color: var(--primary-green);
 }
 
-.col_content .input-group-text {
+.page_footer .col_content .input-group-text {
     border: none;
     border-radius: 0 30px 30px 0;
     background: #253237;
@@ -368,11 +376,12 @@ body {
     margin: 0;
 }
 
-.col_content .input-group-text:hover {
+
+.page_footer .col_content .input-group-text:hover {
     background-color: var(--primary-green);
 }
 
-.col_content .form-control {
+.page_footer .col_content .form-control {
     border-radius: 30px 0 0 30px;
     width: 100%;
     border: none;
@@ -405,6 +414,103 @@ body {
 }
 
 /* grocery product end */
+/* featured product start */
+.fullinfoproduct img {
+    max-width: 145px;
+    float: left;
+
+}
+
+.product_info img:hover {
+    display: none;
+}
+
+.product_info {
+    padding: 15px;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    height: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.product_info:hover {
+    border-color: var(--primary-green);
+}
+
+.product_info .product_text {
+    margin: 0px;
+    width: 50%;
+    float: left;
+}
+
+.product_info .product_text p {
+    margin: 0px;
+}
+
+.product_text .product_category {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    line-height: 1;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.product_text .product_name {
+    color: #253237;
+    margin: 0;
+    text-transform: capitalize;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product_text .product_name:hover {
+    color: var(--primary-green);
+}
+
+.product_text .product_price {
+    font-size: 15px;
+    margin-top: 0;
+    color: #555;
+    display: inline-block;
+    font-weight: 400;
+}
+
+
+
+.fullinfoproduct .product_search {
+    position: absolute;
+    left: 54px;
+    top: 54px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullinfoproduct .product_search:hover {
+    background: var(--primary-green);
+    color: #fff;
+}
+
+.fullinfoproduct img {
+    /* max-width: 145px; */
+    float: left;
+    width: 50%;
+    padding: 1px;
+}
+
+/* featured product end */
 .slide-in-right {
     -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

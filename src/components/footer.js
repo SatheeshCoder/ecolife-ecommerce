@@ -61,7 +61,7 @@ function footer() {
 
           <Col sm={6} md={6} lg={2}>
             <div className="col_content mb_device">
-              <h3>information</h3>
+              <h3 className="footer_tx">information</h3>
               <ul>
                 <li>delivery</li>
                 <li>about us</li>
@@ -74,7 +74,7 @@ function footer() {
           </Col>
           <Col sm={6} md={6} lg={2}>
             <div className="col_content  mb_device">
-              <h3>custom links</h3>
+              <h3 className="footer_tx">custom links</h3>
               <ul>
                 <li>legal notice</li>
                 <li>prices drop</li>
@@ -87,7 +87,7 @@ function footer() {
           </Col>
           <Col sm={6} md={6} lg={4}>
             <div className="col_content  mb_device">
-              <h3>newspaper</h3>
+              <h3 className="footer_tx">newspaper</h3>
               <p>
                 you may unsubscribe at vany moment.for that purpose,please find
                 our contact info in the notice

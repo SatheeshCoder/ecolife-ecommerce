@@ -1,33 +1,39 @@
 import React from "react";
-import Breadcrumbs from "./components/breadcrumbs";
-import AppBar from "./components/appBar";
-import Product from "./components/product";
-import Carousel from "./components/carousel";
-import Header from "./components/header";
-import Sellerproduct from "./components/sellerproduct";
-import Add from "./components/add";
-import Grocery from "./components/gocery";
-import Footer from "./components/footer";
-
+import Home from "./pages/home";
+import Product from "./pages/fresh";
+import Featuredproduct from "./components/featuredproduct";
 // react local css
 import "./css/style.css";
 // bootstrap css
 import "bootstrap/dist/css/bootstrap.css";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <React.Fragment>
-      <AppBar />
-      <Carousel />
+      {/* <BrowserRouter>
+        <div>
+          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
+          <Link to="/product">product</Link>
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home " element={<Home />} />
+          <Route path="/product" element={<Product />} />
+        </Routes>
+      </BrowserRouter> */}
+      {/* <AppBar />
+      <Carousel /> */}
       {/* <Breadcrumbs /> */}
-      {/* <Product />
-     
+      {/* <Product />*/}
 
       {/* <Add /> */}
       {/* <Sellerproduct /> */}
-      <Header />
-      <Grocery />
-      <Footer />
+      {/* <Header /> */}
+      {/* <Grocery /> */}
+      {/* <Footer /> */}
+      <Featuredproduct />
     </React.Fragment>
   );
 }
