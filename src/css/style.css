@@ -598,6 +598,7 @@ template {
     justify-content: center;
     /* border: 1px solid gray; */
     padding: 2px;
+    background-color: #f6f6f6;
 }
 
 .square {
@@ -606,16 +607,31 @@ template {
     background-color: blueviolet;
 }
 
-.list_icon button {
+.list_icon .btn {
+    color: #ffffff;
+    background: none;
+    border: none;
+}
+
+.list_icon .btn:hover {
+    background: none;
+    color: black;
+}
+
+.list_icon .btn:active {
+    color: #5ea781;
+}
+
+/* .list_icon button {
     margin: 4px;
     background: rgb(121, 12, 9);
     background: linear-gradient(90deg, rgba(121, 12, 9, 0.9951330874146533) 12%, rgba(50, 60, 62, 1) 100%);
     ;
-}
+} */
 
-.list_icon button:hover {
-    color: #673ab7;
-}
+/* .list_icon button:hover {
+    color: gray;
+} */
 
 .list_icon svg {
     font-size: 40px;

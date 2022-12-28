@@ -421,9 +421,9 @@ body {
 
 }
 
-.product_info img:hover {
+/* .product_info img:hover {
     display: none;
-}
+} */
 
 .product_info {
     padding: 15px;

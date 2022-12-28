@@ -26,14 +26,14 @@ function App() {
       {/* <AppBar />
       <Carousel /> */}
       {/* <Breadcrumbs /> */}
-      {/* <Product />*/}
+      <Product />
 
       {/* <Add /> */}
       {/* <Sellerproduct /> */}
       {/* <Header /> */}
       {/* <Grocery /> */}
       {/* <Footer /> */}
-      <Featuredproduct />
+      {/* <Featuredproduct /> */}
     </React.Fragment>
   );
 }

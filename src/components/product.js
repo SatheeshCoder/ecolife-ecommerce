@@ -182,21 +182,31 @@ function Product() {
     <>
       {" "}
       <div className="list_icon">
-        <Button onClick={handleshowtogrid}>
-          <GridViewIcon />
-        </Button>
-        <Button onClick={handleshowtofour}>
-          <DragIndicatorIcon />
-        </Button>
-        <Button onClick={handleshowtofull}>
-          <ViewModuleIcon />
-        </Button>
+        <p>
+          <label>sort by</label>
+          <select>
+            <option value="position">position</option>
+            <option value="position">position</option>
+            <option value="position">position</option>
+          </select>
+        </p>
+        <div>
+          <Button onClick={handleshowtogrid}>
+            <GridViewIcon />
+          </Button>
+          <Button onClick={handleshowtofour}>
+            <DragIndicatorIcon />
+          </Button>
+          <Button onClick={handleshowtofull}>
+            <ViewModuleIcon />
+          </Button>
+        </div>{" "}
+        <div>{productList.length}</div>
       </div>
       <Container>
         <>
           {twoProduct == true && (
             <Row>
-              <div>{productList.length}</div>
               {productList.map((e, i) => {
                 return (
                   <Col sm={12} md={6}>
@@ -314,7 +324,6 @@ function Product() {
         </>
         {threeProduct == true && (
           <Row>
-            <div>{productList.length}</div>
             {productList.map((e, i) => {
               return (
                 <Col sm={12} md={4}>
@@ -431,7 +440,6 @@ function Product() {
         )}
         {fourProduct == true && (
           <Row>
-            <div>{productList.length}</div>
             {productList.map((e, i) => {
               return (
                 <Col sm={8} md={3}>
