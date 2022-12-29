@@ -599,6 +599,7 @@ template {
     /* border: 1px solid gray; */
     padding: 2px;
     background-color: #f6f6f6;
+    margin-bottom: 10px;
 }
 
 .square {
@@ -632,6 +633,25 @@ template {
 /* .list_icon button:hover {
     color: gray;
 } */
+.list_icon .sorter-label {
+    padding: 0;
+    display: inline-block;
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.list_icon .sorter-options {
+    border: 1px solid #ebebeb;
+    border-radius: 30px;
+    background: #fff;
+    height: 24px;
+    color: #888;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 10px;
+}
 
 .list_icon svg {
     font-size: 40px;
@@ -766,7 +786,7 @@ template {
     padding: 18px;
 }
 
-.product_bg .item_text h4, span {
+.product_bg .item_text h4 span {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 12px;

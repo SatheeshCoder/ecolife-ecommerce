@@ -182,9 +182,9 @@ function Product() {
     <>
       {" "}
       <div className="list_icon">
-        <p>
+        <p className="sorter-label ">
           <label>sort by</label>
-          <select>
+          <select className="sorter-options ">
             <option value="position">position</option>
             <option value="position">position</option>
             <option value="position">position</option>
@@ -201,7 +201,7 @@ function Product() {
             <ViewModuleIcon />
           </Button>
         </div>{" "}
-        <div>{productList.length}</div>
+        <div> total number of items ({productList.length})</div>
       </div>
       <Container>
         <>

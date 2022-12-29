@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./pages/home";
 import Product from "./pages/fresh";
 import Featuredproduct from "./components/featuredproduct";
+import Offcontent from "./components/accordian";
 // react local css
 import "./css/style.css";
 // bootstrap css
@@ -27,7 +28,7 @@ function App() {
       <Carousel /> */}
       {/* <Breadcrumbs /> */}
       <Product />
-
+      <Offcontent />
       {/* <Add /> */}
       {/* <Sellerproduct /> */}
       {/* <Header /> */}
