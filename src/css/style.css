@@ -582,7 +582,7 @@ template {
     background-color: white;
     position: absolute;
     top: 80px;
-    left: 128px;
+    left: 87px;
     color: black;
 }
 
@@ -619,8 +619,9 @@ template {
     color: black;
 }
 
-.list_icon .btn:active {
-    color: #5ea781;
+.active_grid svg {
+    fill: black;
+
 }
 
 /* .list_icon button {
@@ -633,16 +634,9 @@ template {
 /* .list_icon button:hover {
     color: gray;
 } */
-.list_icon .sorter-label {
-    padding: 0;
-    display: inline-block;
-    font-size: 14px;
-    color: #888;
-    font-weight: 400;
-    text-transform: capitalize;
-}
 
-.list_icon .sorter-options {
+
+.toolbar_products .sorter-options {
     border: 1px solid #ebebeb;
     border-radius: 30px;
     background: #fff;
@@ -653,16 +647,65 @@ template {
     padding: 0 10px;
 }
 
-.list_icon svg {
-    font-size: 40px;
-    -webkit-transform: rotate(90deg);
-}
 
 .ot_Stock {
     position: absolute;
     top: 85px;
-    left: 83px;
+    left: 64px;
 }
+
+.toolbar_products {
+    padding: 10px 30px;
+    background: #f6f6f6;
+    border: 0;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    height: 55px;
+
+}
+
+.toolbar_products .btn-primary:active {
+    --bs-btn-active-bg: none;
+}
+
+.toolbar_products .toolbar_amount {
+    font-size: 14px;
+    color: #888;
+    text-transform: capitalize;
+}
+
+.toolbar_products select:focus-visible {
+    outline: none;
+}
+
+.toolbar_products .sorter_labeltext {
+    padding: 0;
+    font-size: 14px;
+    color: #888;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-right: 7px;
+}
+
+.toolbar_products .list_icon svg {
+    width: 30px;
+    height: 30px;
+    color: gainsboro;
+    font-size: 40px;
+    -webkit-transform: rotate(90deg);
+}
+
+.toolbar_products .list_icon svg :hover {
+    color: black;
+    cursor: pointer;
+
+}
+
+/* .toolbar_products .list_icon svg :active {
+    color: black;
+} */
 
 .product_bg:hover .circle {
     display: flex;
@@ -786,7 +829,14 @@ template {
     padding: 18px;
 }
 
-.product_bg .item_text h4 span {
+.product_bg .item_text h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 12px;
+    color: #999;
+}
+
+.product_bg .item_text span {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 12px;
@@ -794,10 +844,19 @@ template {
 }
 
 .product_bg .item_text p {
-    font-size: 18px;
-    font-weight: 18px;
+    color: #253237;
+    margin: 0;
     text-transform: capitalize;
-    margin-bottom: 0px;
+
+
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 14px;
+
+
+
+
+
 }
 
 .star_icon svg {
@@ -831,6 +890,7 @@ template {
         position: absolute;
         left: -1px;
     }
+
 }
 
 @media only screen and (min-width: 768px) {

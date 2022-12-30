@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import "../css/style2.css";
+import "./style2.css";
 import item1 from "../img/icon_cms1.png";
 import item2 from "../img/icon_cms2.png";
 import item3 from "../img/icon_cms3.png";

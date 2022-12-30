@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Button, Carousel } from "react-bootstrap";
-import "../css/style2.css";
+import "./style2.css";
 import SlideItem from "../img/carousel.jpg";
 import SlideItem2 from "../img/carousel1.jpg";
-
-import "../components/style2.css";
 
 function carousel() {
   const [detail, setDetail] = useState([]);

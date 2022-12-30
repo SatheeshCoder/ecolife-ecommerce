@@ -3,6 +3,10 @@ import React from "react";
 import Product from "../components/product";
 
 function Fresh() {
-  return <div>{<Product />}</div>;
+  return (
+    <div>
+      <Product />
+    </div>
+  );
 }
 export default Fresh;

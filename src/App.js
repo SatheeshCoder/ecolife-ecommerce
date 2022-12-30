@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./pages/home";
 import Product from "./pages/fresh";
 import Featuredproduct from "./components/featuredproduct";
-import Offcontent from "./components/accordian";
+
 // react local css
 import "./css/style.css";
 // bootstrap css
@@ -12,23 +12,23 @@ import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <React.Fragment>
-      {/* <BrowserRouter>
-        <div>
+      <BrowserRouter>
+        {/* <div>
           <Link to="/">Home</Link>
           <Link to="/home">Home</Link>
           <Link to="/product">product</Link>
-        </div>
+        </div> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home " element={<Home />} />
           <Route path="/product" element={<Product />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
       {/* <AppBar />
       <Carousel /> */}
       {/* <Breadcrumbs /> */}
-      <Product />
-      <Offcontent />
+      {/* <Product /> */}
+
       {/* <Add /> */}
       {/* <Sellerproduct /> */}
       {/* <Header /> */}
