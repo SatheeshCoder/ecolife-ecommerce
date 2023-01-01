@@ -100,15 +100,23 @@ function Featuredproduct() {
           {product.map((e, i) => {
             return (
               <Col sm={6} md={4} lg={3}>
-                <div className="product_info">
-                  <div className="fullinfoproduct">
+                <div className="product_info ">
+                  <div className="fullinfoproduct mt-3">
                     <span className="product_item1">
-                      <img src={e.img_1} alt="product" />
-                      {/* <img src={Image2} alt="product" className="product_item2" /> */}
+                      <img
+                        src={e.img_1}
+                        alt="product"
+                        className="product_item1"
+                      />
+                      <img
+                        src={e.img_2}
+                        alt="product"
+                        className="product_item2"
+                      />
                     </span>
-                    <span className="product_search">
+                    {/* <span className="product_search">
                       <SearchIcon />
-                    </span>
+                    </span> */}
                     <div className="product_text">
                       <p className="product_category">fresh vegetable</p>
                       <p className="product_name">{e.product_name}</p>

@@ -7,6 +7,11 @@ body {
     --primary-green: #5ea781;
     --text-primary: #253237;
     --text-bs: black;
+    --primary-white: #ffff;
+    --primary-grey: #888;
+    --primary-yellow: yellow;
+    --primary-lightgrey: #f6f6f6;
+    --primary-greygray: #ebebeb;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -405,14 +410,14 @@ template {
 
 .App .top_header {
     background-color: var(--text-primary);
-    color: #ffff;
+    color: var(--primary-white);
     padding: 12px;
     max-height: 45px;
     width: 100%;
 }
 
 .App .top_header span {
-    color: #fff;
+    color: var(--primary-white);
     padding: 0px 10px;
     text-transform: capitalize;
 }
@@ -433,7 +438,7 @@ template {
 
 .App .middle_header {
     min-height: 100px;
-    background-color: #ffffff;
+    background-color: var(--primary-white);
     /* display: flex; */
     /* align-items: center; */
 }
@@ -464,7 +469,7 @@ template {
 }
 
 .dropdownl {
-    color: #fff;
+    color: var(--primary-white);
 }
 
 
@@ -493,7 +498,7 @@ template {
 .overlay .overlay_ho {
     width: 50%;
     height: 100%;
-    background-color: white;
+    /* background-color: var(--primary-lightgrey); */
     float: left;
 }
 
@@ -501,7 +506,7 @@ template {
     width: 2rem;
     font-size: 25px;
 
-    color: black;
+    color: var(--text-bs);
 }
 
 .overlay .overlay_ho svg:hover {
@@ -509,7 +514,7 @@ template {
 }
 
 .overlay .overlay_ho1 {
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--text-bs);
     font-size: 14px;
     color: black;
 }
@@ -522,7 +527,7 @@ template {
 .overlay .overlay_ho {
     font-size: 14px;
     font-weight: 700;
-    color: black;
+    color: var(--text-bs);
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -579,7 +584,7 @@ template {
     width: 50px;
     height: 50px;
     border-radius: 30px;
-    background-color: white;
+    background-color: var(--primary-white);
     position: absolute;
     top: 80px;
     left: 87px;
@@ -592,13 +597,18 @@ template {
     cursor: pointer;
 }
 
+.nav_item a {
+    text-decoration: none;
+    color: var(--text-bs);
+}
+
 .list_icon {
     display: flex;
     align-items: center;
     justify-content: center;
     /* border: 1px solid gray; */
     padding: 2px;
-    background-color: #f6f6f6;
+    background-color: var(--primary-lightgrey);
     margin-bottom: 10px;
 }
 
@@ -609,18 +619,18 @@ template {
 }
 
 .list_icon .btn {
-    color: #ffffff;
+    color: var(--primary-white);
     background: none;
     border: none;
 }
 
 .list_icon .btn:hover {
     background: none;
-    color: black;
+    color: var(--text-bs);
 }
 
 .active_grid svg {
-    fill: black;
+    fill: var(--text-bs);
 
 }
 
@@ -637,11 +647,11 @@ template {
 
 
 .toolbar_products .sorter-options {
-    border: 1px solid #ebebeb;
+    border: 1px solid var(--primary-greygray);
     border-radius: 30px;
-    background: #fff;
+    background: var(--primary-white);
     height: 24px;
-    color: #888;
+    color: var(--primary-grey);
     font-size: 14px;
     line-height: 22px;
     padding: 0 10px;
@@ -650,19 +660,20 @@ template {
 
 .ot_Stock {
     position: absolute;
-    top: 85px;
-    left: 64px;
+    top: 25%;
+    left: 25%;
 }
 
 .toolbar_products {
     padding: 10px 30px;
-    background: #f6f6f6;
+    background: var(--primary-lightgrey);
     border: 0;
     margin-bottom: 30px;
 
     display: flex;
     align-items: center;
     height: 55px;
+
 
 }
 
@@ -672,7 +683,7 @@ template {
 
 .toolbar_products .toolbar_amount {
     font-size: 14px;
-    color: #888;
+    color: var(--primary-grey);
     text-transform: capitalize;
 }
 
@@ -683,22 +694,22 @@ template {
 .toolbar_products .sorter_labeltext {
     padding: 0;
     font-size: 14px;
-    color: #888;
+    color: var(--primary-grey);
     font-weight: 400;
     text-transform: capitalize;
-    margin-right: 7px;
+    margin: 0px 18px;
 }
 
 .toolbar_products .list_icon svg {
     width: 30px;
     height: 30px;
-    color: gainsboro;
+    color: var(--primary-grey);
     font-size: 40px;
     -webkit-transform: rotate(90deg);
 }
 
-.toolbar_products .list_icon svg :hover {
-    color: black;
+.toolbar_products .list_icon svg:hover {
+    fill: var(--text-bs);
     cursor: pointer;
 
 }
@@ -782,7 +793,7 @@ template {
 
 .breadcrumbs_bg svg {
     font-size: 14px;
-    color: grey;
+    color: var(--primary-grey);
 }
 
 .product_bg img {
@@ -795,7 +806,7 @@ template {
 
 .product_bg {
     /* background-color: brown; */
-    border: 1px solid #ebebeb;
+    border: 1px solid var(--primary-greygray);
     /* height: 400px; */
     margin-bottom: 30px;
     border-radius: 5px;
@@ -847,16 +858,12 @@ template {
     color: #253237;
     margin: 0;
     text-transform: capitalize;
-
-
     margin-bottom: 8px;
     font-weight: 700;
     font-size: 14px;
-
-
-
-
-
+    white-space: nowrap;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
 }
 
 .star_icon svg {
@@ -872,6 +879,14 @@ template {
 
     .ddowm_item .dropdown-menu {
         min-width: none;
+    }
+
+    .toolbar_products {
+        padding: 0px;
+    }
+
+    .toolbar_products .sorter_labeltext {
+        margin: 5px;
     }
 }
 
@@ -891,11 +906,19 @@ template {
         left: -1px;
     }
 
+    .toolbar_products {
+        padding: 0px;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
     .App .top_header1 {
         display: none;
+    }
+
+    .toolbar_products {
+        padding: 0px;
     }
 }
 
@@ -911,6 +934,11 @@ template {
 
     .ddowm_item .dropdown-menu {
         min-width: 64rem;
+    }
+
+    .toolbar_products {
+
+        padding: 10px 30px;
     }
 }
 

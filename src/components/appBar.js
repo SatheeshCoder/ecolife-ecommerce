@@ -1,6 +1,7 @@
 // react local css
 import "../css/style.css";
 // bootstrap css
+import { Link } from "react-router-dom";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import SearchIcon from "@mui/icons-material/Search";
 import React from "react";
@@ -58,12 +59,18 @@ function AppBar() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto nav_item">
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href=" #home">
+                  <Link to="/home"> Home</Link>
+                </Nav.Link>
                 <NavDropdown
-                  title="fresh food"
+                  title={<Link to="/product"> fresh food</Link>}
                   id="basic-nav-dropdown"
                   className="ddowm_item fullwidth_dropdown"
                 >
+                  {/* <NavDropdown.Item>
+                    <Link to="/product">Fresh Fruit</Link>
+                  </NavDropdown.Item> */}
+                  {/* <Link to="/product"> fresh food</Link> */}
                   <Row>
                     <Col sm={6} md={6} lg={3}>
                       {" "}
