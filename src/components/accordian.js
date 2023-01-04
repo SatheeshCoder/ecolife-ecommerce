@@ -15,15 +15,19 @@ function Offcontent() {
           <Accordion.Body className="panel_body">
             <ul className="items">
               <li className="item">
+                <input type="checkbox" m_3></input>
                 fresh fruit <span className="count">20</span>
               </li>
               <li className="item">
+                <input type="checkbox"></input>
                 fresh vegetales <span className="count">20</span>
               </li>
               <li className="item">
+                <input type="checkbox"></input>
                 fresh salid&dips <span className="count">20</span>
               </li>
               <li className="item">
+                <input type="checkbox"></input>
                 sour cream&dip <span className="count">20</span>
               </li>
             </ul>

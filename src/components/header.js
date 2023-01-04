@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "react-router-dom";
+
 import { Row, Col, Container } from "react-bootstrap";
 import "./style2.css";
 import item1 from "../img/icon_cms1.png";

@@ -872,6 +872,29 @@ template {
     margin-bottom: 0px;
 }
 
+.twobg_grid .ot_Stock {
+    position: absolute;
+    top: 25%;
+    left: 37%;
+
+}
+
+.threebg_grid .ot_Stock {
+    position: absolute;
+    top: 25%;
+    left: 31%;
+}
+
+.fourbg_grid .ot_Stock {
+    position: absolute;
+    top: 25%;
+    left: 28%;
+}
+
+.App .navbar-toggler:focus {
+    box-shadow: none;
+}
+
 @media only screen and (max-width: 600px) {
     .App .top_header1 {
         display: none;
@@ -888,6 +911,7 @@ template {
     .toolbar_products .sorter_labeltext {
         margin: 5px;
     }
+
 }
 
 @media only screen and (max-width: 425px) {}

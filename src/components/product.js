@@ -255,8 +255,8 @@ function Product() {
                 <Row>
                   {productList.map((e, i) => {
                     return (
-                      <Col xs={12} sm={12} md={6}>
-                        <section className="product_bg">
+                      <Col xs={12} sm={6} md={6}>
+                        <section className="product_bg twobg_grid">
                           <img
                             src={e.img_1}
                             alt="item_image"
@@ -373,8 +373,8 @@ function Product() {
                 <Row>
                   {productList.map((e, i) => {
                     return (
-                      <Col sm={12} md={4}>
-                        <section className="product_bg">
+                      <Col sm={6} md={4}>
+                        <section className="product_bg  threebg_grid">
                           <img
                             src={e.img_1}
                             alt="item_image"
@@ -491,7 +491,7 @@ function Product() {
                   {productList.map((e, i) => {
                     return (
                       <Col xs={12} sm={4} md={3} lg={3}>
-                        <section className="product_bg">
+                        <section className="product_bg  fourbg_grid">
                           <img
                             src={e.img_1}
                             alt="item_image"

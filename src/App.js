@@ -3,7 +3,6 @@ import Home from "./pages/home";
 import Product from "./pages/fresh";
 import AppBar from "./components/appBar";
 import Footer from "./components/footer";
-import Featuredproduct from "./components/featuredproduct";
 
 // react local css
 import "./css/style.css";
@@ -31,11 +30,9 @@ function App() {
       {/* <Carousel />  */}
       {/* <Breadcrumbs /> */}
       {/* <Product /> */}
-      {/* <Add /> */}
+
       {/* <Sellerproduct /> */}
       {/* <Header /> */}
-      {/* <Grocery /> */}
-      {/* <Featuredproduct /> */}
     </React.Fragment>
   );
 }

@@ -48,15 +48,26 @@ function Sellerproduct() {
   }, []);
   return (
     <>
-      {item.length > 0 && (
-        <Container>
+      <Container>
+        <div className=" full-featuredproduct">
+          <div className=" rokan-featured-heading">
+            {" "}
+            <h3 className="product_heading"> featuredproduct</h3>
+            <p class="description">Add hot products to weekly line up </p>
+          </div>
+        </div>
+        {item.length > 0 && (
           <Row>
             {item.map((e, i) => {
               return (
-                <Col sm={12} md={4}>
+                <Col sm={12} md={4} className="custumize_sellerproduct">
                   <span className="product_txp">
                     <div className="product_txh">
-                      <img src={e.img} alt="productdetails" />
+                      <img
+                        src={e.img}
+                        alt="productdetails"
+                        className="product_txh"
+                      />
                     </div>
                     <div className="text_card">
                       <h3>fresh vegetables</h3>
@@ -74,8 +85,8 @@ function Sellerproduct() {
               );
             })}
           </Row>
-        </Container>
-      )}
+        )}
+      </Container>
     </>
   );
 }

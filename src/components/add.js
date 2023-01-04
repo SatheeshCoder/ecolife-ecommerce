@@ -10,32 +10,17 @@ function Add() {
         <Row>
           <Col sm={12} md={3}>
             <div className="product_txp">
-              <img
-                src={img1}
-                alt="ad the product"
-                className="product_txh"
-                width="100%"
-              />
+              <img src={img1} alt="ad the product" className="product_txh" />
             </div>
           </Col>
           <Col sm={12} md={6}>
             <div className="product_txp">
-              <img
-                src={img2}
-                alt="ad the product"
-                className="product_txh"
-                width="100%"
-              />
+              <img src={img2} alt="ad the product" className="product_txh" />
             </div>
           </Col>
           <Col sm={12} md={3}>
             <div className="product_txp">
-              <img
-                src={img3}
-                alt="ad the product"
-                className="product_txh"
-                width="100%"
-              />
+              <img src={img3} alt="ad the product" className="product_txh" />
             </div>
           </Col>
         </Row>
