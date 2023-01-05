@@ -416,6 +416,11 @@ template {
     width: 100%;
 }
 
+.App .top_header a {
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
 .App .top_header span {
     color: var(--primary-white);
     padding: 0px 10px;
@@ -600,6 +605,10 @@ template {
 .nav_item a {
     text-decoration: none;
     color: var(--text-bs);
+}
+
+.nav_item a:hover {
+    color: black;
 }
 
 .list_icon {

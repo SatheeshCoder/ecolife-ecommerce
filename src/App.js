@@ -1,6 +1,9 @@
 import React from "react";
 import Home from "./pages/home";
 import Product from "./pages/fresh";
+import Signin from "./pages/signin";
+import Signup from "./pages/signup";
+
 import AppBar from "./components/appBar";
 import Footer from "./components/footer";
 
@@ -24,6 +27,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/sign_in" element={<Signin />} />
+          <Route path="/sign_up" element={<Signup />} />
         </Routes>
       </BrowserRouter>
       <Footer />
@@ -31,7 +36,6 @@ function App() {
       {/* <Breadcrumbs /> */}
       {/* <Product /> */}
 
-      {/* <Sellerproduct /> */}
       {/* <Header /> */}
     </React.Fragment>
   );

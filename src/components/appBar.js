@@ -26,7 +26,11 @@ function AppBar() {
             <Col md={7} lg={9} sm={12}>
               <div className="top_header1">
                 <span>my wish lists</span> <span>|</span>
-                <span>sign in </span> <span>|</span>
+                <span>
+                  {" "}
+                  <Link to="/sign_in">sign in</Link>
+                </span>{" "}
+                <span>|</span>
                 <span>company products</span> <span>|</span>
                 <span>create account</span> <span>|</span>
                 <span>
@@ -56,7 +60,10 @@ function AppBar() {
               {/* ecolife logo */}
               <img src={ecolifelogo} alt="logo" />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              className="nav_toogler"
+            />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto nav_item">
                 <Nav.Link href=" #home">
@@ -126,7 +133,7 @@ function AppBar() {
                   </Row>
                 </NavDropdown>
                 <NavDropdown
-                  title="fresh vegetable"
+                  title="page"
                   id="basic-nav-dropdown"
                   className="dowm_item"
                 >
@@ -143,7 +150,7 @@ function AppBar() {
                   </Row>
                 </NavDropdown>
                 <NavDropdown
-                  title="page"
+                  title={<Link to="/sign_up">sign up</Link>}
                   id="basic-nav-dropdown"
                   className="dowm_item"
                 >
