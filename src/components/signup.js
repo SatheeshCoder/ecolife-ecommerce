@@ -43,9 +43,7 @@ function sign_up() {
                   </p>
                 </div>
                 <div className="primarycontent inlinecontent">
-                  <Button className="primary" type="submit" title="signin">
-                    create an account
-                  </Button>
+                  <Button className="primary">create an account</Button>
                 </div>
               </div>
             </Col>
