@@ -2,16 +2,18 @@ import React, { useState, useEffect } from "react";
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 
 function SignIn() {
-  const [lastname, setLastName] = useState("");
   const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [cpassword, setcPassword] = useState("");
-  const [rlastname, rsetLastName] = useState(false);
-  const [rfirstname, rsetFirstName] = useState(false);
-  const [remail, rsetEmail] = useState(true);
-  const [rpassword, rsetPassword] = useState(true);
-  const [rcpassword, rsetcPassword] = useState(true);
+  const [validationlastname, setValidationLastname] = useState(false);
+  const [validationfirstname, setValidationFirstname] = useState(false);
+  const [validationemail, setValidationEmail] = useState(false);
+  const [Validationpassword, setValidationPassword] = useState(false);
+  const [validationconfirmpassword, setValidationConfirmpassword] = useState(
+    false
+  );
 
   let value = {
     firstname: { firstname },
@@ -20,37 +22,41 @@ function SignIn() {
     password: { password },
     cpassword: { cpassword },
   };
-  function handleshowemail(event) {
-    console.log(event.target.value);
-    setEmail(event.target.value);
-    // event.preventdefault();
-  }
-  function handleshowpassword(event) {
-    console.log(event.target.value);
-    setPassword(event.target.value);
-    // event.preventdefault();
-  }
-  function handleshowcpassword(event) {
-    console.log(event.target.value);
-
-    setcPassword(event.target.value);
-
-    // event.preventdefault();
-  }
   function handleshowfirstname(event) {
     // console.log(event.target.value);
     setFirstName(event.target.value);
+    setValidationFirstname(false);
     console.log("firstname++++", firstname);
-    // event.preventdefault()firstname;
   }
+  function handleshowlastname(event) {
+    // console.log(event.target.value);
+    console.log(event.target.value);
+    setValidationLastname(false);
+    setLastName(event.target.value);
+  }
+  function handleshowemail(event) {
+    // console.log(event.target.value);
+    console.log(event.target.value);
+    setEmail(event.target.value);
+    setValidationEmail(false);
+  }
+  function handleshowpassword(event) {
+    // console.log(event.target.value);
+    console.log(event.target.value);
+    setPassword(event.target.value);
+    setValidationPassword(false);
+  }
+  function handleshowcpassword(event) {
+    // console.log(event.target.value);
+    console.log(event.target.value);
+    setcPassword(event.target.value);
+    setValidationConfirmpassword(false);
+  }
+
   // useEffect(() => {
   //   console.log("firstname", firstname);
   // }, [firstname]);
-  function handleshowlastname(event) {
-    console.log(event.target.value);
-    setLastName(event.target.value);
-    // event.preventdefault();
-  }
+
   const handleSubmit = (event) => {
     // console.log(firstname);
     // console.log(lastname);
@@ -59,9 +65,21 @@ function SignIn() {
     // console.log(cpassword);
     // console.log(value);
     // alert("your file is upload");
-    // event.preventdefault();
+    event.preventDefault();
     if (firstname == "" || firstname == undefined) {
-      rsetFirstName(true);
+      setValidationFirstname(true);
+    }
+    if (lastname == "" || lastname == undefined) {
+      setValidationLastname(true);
+    }
+    if (email == "" || email == undefined) {
+      setValidationEmail(true);
+    }
+    if (password == "" || password == undefined) {
+      setValidationPassword(true);
+    }
+    if (cpassword == "" || cpassword == undefined) {
+      setValidationConfirmpassword(true);
     }
   };
 
@@ -83,7 +101,7 @@ function SignIn() {
                       type="text"
                       title="firstname"
                     />
-                    {rfirstname == true ? (
+                    {validationfirstname == true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>
@@ -94,7 +112,7 @@ function SignIn() {
                       type="text"
                       title="lastname"
                     />
-                    {rlastname == true ? (
+                    {validationlastname == true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>
@@ -113,8 +131,8 @@ function SignIn() {
                       onChange={handleshowemail}
                       type="email"
                       title="email"
-                    />
-                    {remail == "true" ? (
+                    ></Form.Control>
+                    {validationemail == true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>
@@ -125,7 +143,7 @@ function SignIn() {
                       type="password"
                       title="password"
                     />
-                    {rpassword == "true" ? (
+                    {Validationpassword == true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>
@@ -136,7 +154,7 @@ function SignIn() {
                       type="password"
                       title="confirm password"
                     />
-                    {rcpassword == "true" ? (
+                    {validationconfirmpassword == true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>

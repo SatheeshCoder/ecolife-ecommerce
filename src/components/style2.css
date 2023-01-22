@@ -20,7 +20,12 @@ body {
     border-radius: 10px;
     padding: 20px;
 
+
 }
+
+/* .signin_page .btn:first-child:active {
+    background-color: transparent;
+} */
 
 .signin_page .mage-error {
     color: var(--primary-formtext);
@@ -72,6 +77,7 @@ body {
 
 .signin_page .form-check-input:focus {
     box-shadow: none;
+    outline: none;
 }
 
 .signin_page .primarycontent {
