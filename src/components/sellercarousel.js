@@ -154,7 +154,7 @@ const items = [
     <div className="item">
       {ProuductList.map((e, i) => {
         return (
-          <div data-value={i + 1}>
+          <div value={i + 1}>
             <section className="product_bg twobg_grid">
               <img src={e.img_1} alt="item_image" className="item_image" />
               <img src={e.img_2} alt="item_image" className="item_image1" />
