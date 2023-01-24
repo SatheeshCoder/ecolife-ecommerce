@@ -4,7 +4,7 @@ import "./style2.css";
 import SlideItem from "../img/carousel.jpg";
 import SlideItem2 from "../img/carousel1.jpg";
 
-function carousel() {
+function HomeCarousel() {
   const [detail, setDetail] = useState([]);
   useEffect(() => {
     setDetail([
@@ -70,4 +70,4 @@ function carousel() {
     </div>
   );
 }
-export default carousel;
+export default HomeCarousel;
