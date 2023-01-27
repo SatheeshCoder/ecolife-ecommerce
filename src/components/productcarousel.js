@@ -6,7 +6,6 @@ import SearchIcon from "@mui/icons-material/Search";
 import "../components/style2.css";
 import Image from "../img/item.jpg";
 import Image2 from "../img/item2.jpg";
-import carousel from "./carousel";
 import { Container } from "react-bootstrap";
 
 const responsive = {

@@ -158,14 +158,14 @@ const items = [
             <section className="product_bg twobg_grid">
               <img src={e.img_1} alt="item_image" className="item_image" />
               <img src={e.img_2} alt="item_image" className="item_image1" />
-              {e.lable != (undefined || null) ? (
+              {e.lable !== (undefined || null) ? (
                 <Badge
                   bg={
-                    e.label_bg == "blue"
+                    e.label_bg === "blue"
                       ? "primary"
-                      : e.label_bg == "yellow"
+                      : e.label_bg === "yellow"
                       ? "secondary"
-                      : e.label_bg == "red"
+                      : e.label_bg === "red"
                       ? "danger"
                       : "warning"
                   }
@@ -174,14 +174,12 @@ const items = [
                   new
                 </Badge>
               ) : null}
-              {e.out_Of_Stock == "true" ? (
+              {e.out_Of_Stock === "true" ? (
                 <Button variant="danger" className="ot_Stock">
                   out of stock
                 </Button>
-              ) : (
-                undefined
-              )}
-              {e.out_Of_Stock == "true" ? null : (
+              ) : undefined}
+              {e.out_Of_Stock === "true" ? null : (
                 <span className="circle">
                   <SearchSharpIcon />
                 </span>
@@ -200,7 +198,7 @@ const items = [
                 <span className="price">$69.00</span>
               </div>
               <div className="overlay">
-                {e.out_Of_Stock == "true" ? null : (
+                {e.out_Of_Stock === "true" ? null : (
                   <>
                     <div className="overlay_ho">
                       <OverlayTrigger
@@ -223,7 +221,7 @@ const items = [
                       >
                         <span className="d-inline-block">
                           {" "}
-                          {e.heart == 1 ? (
+                          {e.heart === 1 ? (
                             <FavoriteIcon />
                           ) : (
                             <FavoriteBorderSharpIcon />

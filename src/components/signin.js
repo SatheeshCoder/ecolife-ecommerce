@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Button, Container, Row, Col, Form } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 function SignIn() {
   const [firstname, setFirstName] = useState("");
@@ -11,17 +11,9 @@ function SignIn() {
   const [validationfirstname, setValidationFirstname] = useState(false);
   const [validationemail, setValidationEmail] = useState(false);
   const [Validationpassword, setValidationPassword] = useState(false);
-  const [validationconfirmpassword, setValidationConfirmpassword] = useState(
-    false
-  );
+  const [validationconfirmpassword, setValidationConfirmpassword] =
+    useState(false);
 
-  let value = {
-    firstname: { firstname },
-    lastname: { lastname },
-    email: { email },
-    password: { password },
-    cpassword: { cpassword },
-  };
   function handleshowfirstname(event) {
     // console.log(event.target.value);
     setFirstName(event.target.value);
@@ -66,19 +58,19 @@ function SignIn() {
     // console.log(value);
     // alert("your file is upload");
     event.preventDefault();
-    if (firstname == "" || firstname == undefined) {
+    if (firstname === "" || firstname === undefined) {
       setValidationFirstname(true);
     }
-    if (lastname == "" || lastname == undefined) {
+    if (lastname === "" || lastname === undefined) {
       setValidationLastname(true);
     }
-    if (email == "" || email == undefined) {
+    if (email === "" || email === undefined) {
       setValidationEmail(true);
     }
-    if (password == "" || password == undefined) {
+    if (password === "" || password === undefined) {
       setValidationPassword(true);
     }
-    if (cpassword == "" || cpassword == undefined) {
+    if (cpassword === "" || cpassword === undefined) {
       setValidationConfirmpassword(true);
     }
   };
@@ -101,7 +93,7 @@ function SignIn() {
                       type="text"
                       title="firstname"
                     />
-                    {validationfirstname == true ? (
+                    {validationfirstname === true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>
@@ -112,7 +104,7 @@ function SignIn() {
                       type="text"
                       title="lastname"
                     />
-                    {validationlastname == true ? (
+                    {validationlastname === true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>
@@ -132,7 +124,7 @@ function SignIn() {
                       type="email"
                       title="email"
                     ></Form.Control>
-                    {validationemail == true ? (
+                    {validationemail === true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>
@@ -143,7 +135,7 @@ function SignIn() {
                       type="password"
                       title="password"
                     />
-                    {Validationpassword == true ? (
+                    {Validationpassword === true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>
@@ -154,7 +146,7 @@ function SignIn() {
                       type="password"
                       title="confirm password"
                     />
-                    {validationconfirmpassword == true ? (
+                    {validationconfirmpassword === true ? (
                       <div className="mage-error">This is a required field</div>
                     ) : null}
                   </Form.Group>

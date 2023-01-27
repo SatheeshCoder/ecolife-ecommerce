@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./pages/home";
 import Product from "./pages/fresh";
+import Home from "./pages/home";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
 
@@ -11,7 +11,7 @@ import Footer from "./components/footer";
 import "./css/style.css";
 // bootstrap css
 import "bootstrap/dist/css/bootstrap.css";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (

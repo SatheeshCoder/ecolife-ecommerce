@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "./style2.css";
 import item1 from "../img/icon_cms1.png";
 import item2 from "../img/icon_cms2.png";
@@ -12,7 +12,7 @@ function header() {
       <Row>
         <Col sm={6} md={6} lg={3}>
           <span>
-            <img src={item1} className="img_headercontent" />
+            <img src={item1} alt="product" className="img_headercontent" />
           </span>
           <p className="text_merge">
             <h5>free shipping</h5>
@@ -21,7 +21,7 @@ function header() {
         </Col>
         <Col sm={6} md={6} lg={3}>
           <span>
-            <img src={item2} className="img_headercontent" />
+            <img src={item2} alt="product" className="img_headercontent" />
           </span>
           <p className="text_merge">
             <h5>free returns</h5>
@@ -30,7 +30,7 @@ function header() {
         </Col>
         <Col sm={6} md={6} lg={3}>
           <span>
-            <img src={item3} className="img_headercontent" />
+            <img src={item3} alt="product" className="img_headercontent" />
           </span>
           <p className="text_merge">
             <h5>100% payment secure </h5>
@@ -39,7 +39,7 @@ function header() {
         </Col>
         <Col sm={6} md={6} lg={3}>
           <span>
-            <img src={item4} className="img_headercontent" />
+            <img src={item4} alt="product" className="img_headercontent" />
           </span>
           <p className="text_merge">
             <h5>support24/7</h5>

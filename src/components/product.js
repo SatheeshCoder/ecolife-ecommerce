@@ -1,28 +1,25 @@
-import React, { useState, useEffect } from "react";
-import { useMedia } from "react-use";
-import {
-  Col,
-  Row,
-  Container,
-  Badge,
-  OverlayTrigger,
-  Tooltip,
-  Button,
-  Navbar,
-} from "react-bootstrap";
-import Offcontent from "../components/accordian";
-import Offcanvas from "../components/offcanvas";
-import ViewModuleIcon from "@mui/icons-material/ViewModule";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
-import GridViewIcon from "@mui/icons-material/GridView";
+import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import DragIndicatorIcon from "@mui/icons-material/DragIndicator";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import StarSharpIcon from "@mui/icons-material/StarSharp";
 import FavoriteBorderSharpIcon from "@mui/icons-material/FavoriteBorderSharp";
-import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
+import GridViewIcon from "@mui/icons-material/GridView";
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
-import ItemImg from "../img/item.jpg";
-import ItemImg1 from "../img/item2.jpg";
+import StarSharpIcon from "@mui/icons-material/StarSharp";
+import ViewModuleIcon from "@mui/icons-material/ViewModule";
+import React, { useEffect, useState } from "react";
+import {
+  Badge,
+  Button,
+  Col,
+  Container,
+  OverlayTrigger,
+  Row,
+  Tooltip,
+} from "react-bootstrap";
+import { useMedia } from "react-use";
+import Offcontent from "../components/accordian";
+import Offcanvas from "../components/offcanvas";
 import "../css/style.css";
 function Product() {
   const [productList, setProuductList] = useState([]);
@@ -218,14 +215,14 @@ function Product() {
                       <div>
                         <Button
                           onClick={handleshowtogrid}
-                          className={twoProduct == true ? "active_grid" : null}
+                          className={twoProduct === true ? "active_grid" : null}
                         >
                           <GridViewIcon />
                         </Button>
                         <Button
                           onClick={handleshowtofour}
                           className={
-                            threeProduct == true ? "active_grid" : null
+                            threeProduct === true ? "active_grid" : null
                           }
                         >
                           <DragIndicatorIcon />
@@ -235,7 +232,7 @@ function Product() {
                     {userScreenDeviceButton ? (
                       <Button
                         onClick={handleshowtofull}
-                        className={fourProduct == true ? "active_grid" : null}
+                        className={fourProduct === true ? "active_grid" : null}
                       >
                         <ViewModuleIcon />
                       </Button>
@@ -251,7 +248,7 @@ function Product() {
                 ) : null}
               </div>
 
-              {twoProduct == true && (
+              {twoProduct === true && (
                 <Row>
                   {productList.map((e, i) => {
                     return (
@@ -267,14 +264,14 @@ function Product() {
                             alt="item_image"
                             className="item_image1"
                           />
-                          {e.lable != (undefined || null) ? (
+                          {e.lable !== (undefined || null) ? (
                             <Badge
                               bg={
-                                e.label_bg == "blue"
+                                e.label_bg === "blue"
                                   ? "primary"
-                                  : e.label_bg == "yellow"
+                                  : e.label_bg === "yellow"
                                   ? "secondary"
-                                  : e.label_bg == "red"
+                                  : e.label_bg === "red"
                                   ? "danger"
                                   : "warning"
                               }
@@ -283,14 +280,12 @@ function Product() {
                               new
                             </Badge>
                           ) : null}
-                          {e.out_Of_Stock == "true" ? (
+                          {e.out_Of_Stock === "true" ? (
                             <Button variant="danger" className="ot_Stock">
                               out of stock
                             </Button>
-                          ) : (
-                            undefined
-                          )}
-                          {e.out_Of_Stock == "true" ? null : (
+                          ) : undefined}
+                          {e.out_Of_Stock === "true" ? null : (
                             <span className="circle">
                               <SearchSharpIcon />
                             </span>
@@ -309,7 +304,7 @@ function Product() {
                             <span className="price">$69.00</span>
                           </div>
                           <div className="overlay">
-                            {e.out_Of_Stock == "true" ? null : (
+                            {e.out_Of_Stock === "true" ? null : (
                               <>
                                 <div className="overlay_ho">
                                   <OverlayTrigger
@@ -336,7 +331,7 @@ function Product() {
                                   >
                                     <span className="d-inline-block">
                                       {" "}
-                                      {e.heart == 1 ? (
+                                      {e.heart === 1 ? (
                                         <FavoriteIcon />
                                       ) : (
                                         <FavoriteBorderSharpIcon />
@@ -369,7 +364,7 @@ function Product() {
                 </Row>
               )}
 
-              {threeProduct == true && (
+              {threeProduct === true && (
                 <Row>
                   {productList.map((e, i) => {
                     return (
@@ -385,14 +380,14 @@ function Product() {
                             alt="item_image"
                             className="item_image1"
                           />
-                          {e.lable != (undefined || null) ? (
+                          {e.lable !== (undefined || null) ? (
                             <Badge
                               bg={
-                                e.label_bg == "blue"
+                                e.label_bg === "blue"
                                   ? "primary"
-                                  : e.label_bg == "yellow"
+                                  : e.label_bg === "yellow"
                                   ? "secondary"
-                                  : e.label_bg == "red"
+                                  : e.label_bg === "red"
                                   ? "danger"
                                   : "warning"
                               }
@@ -401,14 +396,12 @@ function Product() {
                               new
                             </Badge>
                           ) : null}
-                          {e.out_Of_Stock == "true" ? (
+                          {e.out_Of_Stock === "true" ? (
                             <Button variant="danger" className="ot_Stock">
                               out of stock
                             </Button>
-                          ) : (
-                            undefined
-                          )}
-                          {e.out_Of_Stock == "true" ? null : (
+                          ) : undefined}
+                          {e.out_Of_Stock === "true" ? null : (
                             <span className="circle">
                               <SearchSharpIcon />
                             </span>
@@ -427,7 +420,7 @@ function Product() {
                             <span className="price">$69.00</span>
                           </div>
                           <div className="overlay">
-                            {e.out_Of_Stock == "true" ? null : (
+                            {e.out_Of_Stock === "true" ? null : (
                               <>
                                 <div className="overlay_ho">
                                   <OverlayTrigger
@@ -454,7 +447,7 @@ function Product() {
                                   >
                                     <span className="d-inline-block">
                                       {" "}
-                                      {e.heart == 1 ? (
+                                      {e.heart === 1 ? (
                                         <FavoriteIcon />
                                       ) : (
                                         <FavoriteBorderSharpIcon />
@@ -486,7 +479,7 @@ function Product() {
                   })}
                 </Row>
               )}
-              {fourProduct == true && (
+              {fourProduct === true && (
                 <Row>
                   {productList.map((e, i) => {
                     return (
@@ -502,14 +495,14 @@ function Product() {
                             alt="item_image"
                             className="item_image1"
                           />
-                          {e.lable != (undefined || null) ? (
+                          {e.lable !== (undefined || null) ? (
                             <Badge
                               bg={
-                                e.label_bg == "blue"
+                                e.label_bg === "blue"
                                   ? "primary"
-                                  : e.label_bg == "yellow"
+                                  : e.label_bg === "yellow"
                                   ? "secondary"
-                                  : e.label_bg == "red"
+                                  : e.label_bg === "red"
                                   ? "danger"
                                   : "warning"
                               }
@@ -518,14 +511,12 @@ function Product() {
                               new
                             </Badge>
                           ) : null}
-                          {e.out_Of_Stock == "true" ? (
+                          {e.out_Of_Stock === "true" ? (
                             <Button variant="danger" className="ot_Stock">
                               out of stock
                             </Button>
-                          ) : (
-                            undefined
-                          )}
-                          {e.out_Of_Stock == "true" ? null : (
+                          ) : undefined}
+                          {e.out_Of_Stock === "true" ? null : (
                             <span className="circle">
                               <SearchSharpIcon />
                             </span>
@@ -544,7 +535,7 @@ function Product() {
                             <span className="price">$69.00</span>
                           </div>
                           <div className="overlay">
-                            {e.out_Of_Stock == "true" ? null : (
+                            {e.out_Of_Stock === "true" ? null : (
                               <>
                                 <div className="overlay_ho">
                                   <OverlayTrigger
@@ -571,7 +562,7 @@ function Product() {
                                   >
                                     <span className="d-inline-block">
                                       {" "}
-                                      {e.heart == 1 ? (
+                                      {e.heart === 1 ? (
                                         <FavoriteIcon />
                                       ) : (
                                         <FavoriteBorderSharpIcon />

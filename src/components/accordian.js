@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion, Col } from "react-bootstrap";
+import { Accordion } from "react-bootstrap";
 
 function Offcontent() {
   return (
