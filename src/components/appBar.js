@@ -138,20 +138,31 @@ function AppBar() {
                   <Row>
                     <Col sm={12}>
                       <ListGroup>
-                        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-                        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+                        <ListGroup.Item>
+                          <Link to="/home">Home page</Link>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <Link to="/product">Fresh food page</Link>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <Link to="/sign_in">Login page</Link>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <Link to="/sign_up">Register page</Link>
+                        </ListGroup.Item>
+                        <ListGroup.Item>
+                          <Link to="*">404 page</Link>
+                        </ListGroup.Item>
                       </ListGroup>
                     </Col>
                   </Row>
                 </NavDropdown>
-                <NavDropdown
-                  title={<Link to="/sign_up">sign up</Link>}
+                {/* <NavDropdown
+                  title="sign up"
                   id="basic-nav-dropdown"
                   className="dowm_item"
-                ></NavDropdown>
+                ></NavDropdown> */}
+
                 <Nav.Link href="#contact">contact</Nav.Link>
               </Nav>
 

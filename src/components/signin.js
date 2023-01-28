@@ -7,10 +7,12 @@ function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [cpassword, setcPassword] = useState("");
+  const [gender, setGender] = useState("");
   const [validationlastname, setValidationLastname] = useState(false);
   const [validationfirstname, setValidationFirstname] = useState(false);
   const [validationemail, setValidationEmail] = useState(false);
   const [Validationpassword, setValidationPassword] = useState(false);
+  const [validategender, setValidategender] = useState(false);
   const [validationconfirmpassword, setValidationConfirmpassword] =
     useState(false);
 
@@ -44,7 +46,10 @@ function SignIn() {
     setcPassword(event.target.value);
     setValidationConfirmpassword(false);
   }
-
+  function handleShowgender(event) {
+    setGender(event.target.value);
+    setValidategender(false);
+  }
   // useEffect(() => {
   //   console.log("firstname", firstname);
   // }, [firstname]);
@@ -72,6 +77,9 @@ function SignIn() {
     }
     if (cpassword === "" || cpassword === undefined) {
       setValidationConfirmpassword(true);
+    }
+    if (gender === "" || gender === undefined) {
+      setValidategender(true);
     }
   };
 
@@ -109,8 +117,21 @@ function SignIn() {
                     ) : null}
                   </Form.Group>
                   <Form.Label className="label">gender</Form.Label>
-                  <Form.Check label="male" name="group1" type="Radio" />
-                  <Form.Check label="female" name="group1" type="Radio" />
+                  <Form.Check
+                    label="male"
+                    name="group1"
+                    type="Radio"
+                    onChange={handleShowgender}
+                  />
+                  <Form.Check
+                    label="female"
+                    name="group1"
+                    type="Radio"
+                    onChange={handleShowgender}
+                  />
+                  {validategender === true ? (
+                    <div className="mage-error">This is a required field</div>
+                  ) : null}
                 </div>
               </Col>
               <Col xs={12} sm={12} md={6} lg={6}>

@@ -68,9 +68,11 @@ function Sellerproduct() {
 
                       <p className="circle_tx">
                         {" "}
-                        shop now <ArrowRightIcon />
+                        shop now
+                        {/* <div className="circle_icon"> */}
+                        <ArrowRightIcon />
+                        {/* </div> */}
                       </p>
-                      <div className="circle_icon"></div>
                     </div>
                   </span>
                 </Col>
