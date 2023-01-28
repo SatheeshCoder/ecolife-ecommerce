@@ -26,26 +26,24 @@ function AppBar() {
             <Col md={7} lg={9} sm={12}>
               <div className="top_header1">
                 <span>my wish lists</span> <span>|</span>
-                <span>
+                <Link to="/sign_in">
                   {" "}
-                  <Link to="/sign_in">sign in</Link>
-                </span>{" "}
+                  <span>sign in</span>
+                </Link>{" "}
                 <span>|</span>
                 <span>company products</span> <span>|</span>
                 <span>create account</span> <span>|</span>
                 <span>
+                  english
                   <NavDropdown
-                    title="english"
                     id="basic-nav-dropdown"
                     className="dropdownl"
                   ></NavDropdown>
-                  <span>|</span>
                 </span>
+                <span>|</span>
                 <span>
-                  <NavDropdown
-                    title="usd"
-                    id="basic-nav-dropdown"
-                  ></NavDropdown>
+                  usd
+                  <NavDropdown id="basic-nav-dropdown"></NavDropdown>
                 </span>
               </div>
             </Col>
@@ -153,24 +151,18 @@ function AppBar() {
                   title={<Link to="/sign_up">sign up</Link>}
                   id="basic-nav-dropdown"
                   className="dowm_item"
-                >
-                  <ListGroup>
-                    <ListGroup.Item>Cras justo odio</ListGroup.Item>
-                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-                    <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-                    <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-                    <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-                  </ListGroup>
-                </NavDropdown>
+                ></NavDropdown>
                 <Nav.Link href="#contact">contact</Nav.Link>
               </Nav>
 
               <Form className="d-flex header_contact_info">
                 <Nav.Link href="#action1">
                   <SearchIcon />
+                  <span></span>
                 </Nav.Link>
                 <Nav.Link href="#action1">
                   <div className="customize_icon">
+                    {" "}
                     <img
                       src={contactlogo}
                       alt="logo"
@@ -194,7 +186,10 @@ function AppBar() {
                 </Nav.Link>
                 <Nav.Link href="#action1">
                   <span className="price_number">
-                    <b>$0.00</b>
+                    <b className="top_header1">
+                      {" "}
+                      <span>$0.00</span>
+                    </b>
                   </span>
                 </Nav.Link>
               </Form>

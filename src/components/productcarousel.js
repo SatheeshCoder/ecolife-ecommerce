@@ -6,6 +6,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import "../components/style2.css";
 import Image from "../img/item.jpg";
 import Image2 from "../img/item2.jpg";
+import Image3 from "../img/orange.jpg";
+import Image4 from "../img/apple.jpg";
 import { Container } from "react-bootstrap";
 
 const responsive = {
@@ -72,7 +74,7 @@ const items = [
     <div className="product_info ">
       <div className="fullinfoproduct">
         <span className="product_item1">
-          <img src={Image} alt="product" className="product_item" />
+          <img src={Image3} alt="product" className="product_item" />
           <img src={Image2} alt="product" className="product_item2" />
         </span>
         <span className="product_search">
@@ -96,7 +98,7 @@ const items = [
     <div className="product_info ">
       <div className="fullinfoproduct">
         <span className="product_item1">
-          <img src={Image} alt="product" className="product_item" />
+          <img src={Image3} alt="product" className="product_item" />
           <img src={Image2} alt="product" className="product_item2" />
         </span>
         <span className="product_search">
@@ -123,7 +125,7 @@ const items = [
     <div className="product_info ">
       <div className="fullinfoproduct">
         <span className="product_item1">
-          <img src={Image} alt="product" className="product_item" />
+          <img src={Image4} alt="product" className="product_item" />
           <img src={Image2} alt="product" className="product_item2" />
         </span>
         <span className="product_search">
@@ -147,7 +149,7 @@ const items = [
     <div className="product_info ">
       <div className="fullinfoproduct">
         <span className="product_item1">
-          <img src={Image} alt="product" className="product_item" />
+          <img src={Image4} alt="product" className="product_item" />
           <img src={Image2} alt="product" className="product_item2" />
         </span>
         <span className="product_search">
@@ -174,7 +176,7 @@ const items = [
     <div className="product_info ">
       <div className="fullinfoproduct">
         <span className="product_item1">
-          <img src={Image} alt="product" className="product_item" />
+          <img src={Image3} alt="product" className="product_item" />
           <img src={Image2} alt="product" className="product_item2" />
         </span>
         <span className="product_search">
@@ -198,7 +200,7 @@ const items = [
     <div className="product_info ">
       <div className="fullinfoproduct">
         <span className="product_item1">
-          <img src={Image} alt="product" className="product_item" />
+          <img src={Image4} alt="product" className="product_item" />
           <img src={Image2} alt="product" className="product_item2" />
         </span>
         {/* <span className="product_search">

@@ -3,10 +3,9 @@ import Product from "./pages/fresh";
 import Home from "./pages/home";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
-
+import NotFound from "./pages/pagenotfound";
 import AppBar from "./components/appBar";
 import Footer from "./components/footer";
-
 // react local css
 import "./css/style.css";
 // bootstrap css
@@ -29,6 +28,7 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/sign_in" element={<Signin />} />
           <Route path="/sign_up" element={<Signup />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
       <Footer />

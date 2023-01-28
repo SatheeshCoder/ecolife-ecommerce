@@ -66,12 +66,11 @@ function Sellerproduct() {
                       <h3>fresh vegetables</h3>
                       <p>(20 items)</p>
 
-                      {/* <a href="#"> */}
-                      <p className="circle_tx"> shop now</p>
-                      <div className="circle_icon">
-                        <ArrowRightIcon />
-                      </div>
-                      {/* </a> */}
+                      <p className="circle_tx">
+                        {" "}
+                        shop now <ArrowRightIcon />
+                      </p>
+                      <div className="circle_icon"></div>
                     </div>
                   </span>
                 </Col>
